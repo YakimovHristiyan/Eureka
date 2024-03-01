@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  eureka-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8761:8761
+networks:
+  default:
+    name: demo
